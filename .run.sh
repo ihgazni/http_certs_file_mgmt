@@ -11,7 +11,7 @@ alias show_log_time='more `pwd`/.log | egrep "<#"'
 printf "please input scp password: "
 read scp_PassWD
 printf "please input scp destination path ,such as </usr/local/squid/etc/>:"
-read scp_PassWD
+read scp_Dst_Path
 python3 .certs_dir.py $scp_PassWD $scp_Dst_Path
 
 cmd=''
